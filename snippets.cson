@@ -214,7 +214,7 @@ class ${2:name_t}
 
 };
 
-std::ostream &	operator<<(std::ostream &o, $2 const &i)
+std::ostream &	operator<<(std::ostream &o, $2 const &i);
 
 #endif
 """
