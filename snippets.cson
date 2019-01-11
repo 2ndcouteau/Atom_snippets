@@ -146,7 +146,7 @@ else
 #include "$1.hpp"
 
 
-$1::$1(void)
+$1::$1(void) $2
 {
 //	std::cout << " $1 Default Constructor " << std::endl;
 	return;
@@ -175,7 +175,7 @@ $1 &	$1::operator=($1 const &rhs)
 	return *this;
 }
 
-$2
+
 """
 
 ##
@@ -204,6 +204,8 @@ $2
 class ${2:name_t}
 {
 	private:
+
+	protected:
 		$3
 
 	public:
@@ -215,7 +217,7 @@ class ${2:name_t}
 
 };
 
-std::ostream &	operator<<(std::ostream &o, $2 const &i);
+//std::ostream &	operator<<(std::ostream &o, $2 const &i);
 
 #endif
 """
