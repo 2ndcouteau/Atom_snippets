@@ -210,7 +210,7 @@ class ${2:name_t}
 
 	public:
 		$2(void);
-		$2( $2 const &src);
+		$2($2 const &src);
 		~$2(void);
 
 		$2 &	operator=($2 const &rhs);
